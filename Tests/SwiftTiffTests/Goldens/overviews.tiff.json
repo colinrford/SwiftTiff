@@ -42841,7 +42841,3081 @@
           }
         ]
       }
+    },
+    {
+      "directory" : {
+        "bitsPerSample" : [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "compression" : 1,
+        "entries" : [
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 254,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 256,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                270
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 257,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                224
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 258,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 259,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 262,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 277,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                15
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 284,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 322,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 323,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 6,
+            "scalar" : false,
+            "tag" : 324,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                7249462,
+                7740982,
+                8232502,
+                8724022,
+                9215542,
+                9707062
+              ]
+            }
+          },
+          {
+            "count" : 6,
+            "scalar" : false,
+            "tag" : 325,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                491520,
+                491520,
+                491520,
+                491520,
+                491520,
+                491520
+              ]
+            }
+          },
+          {
+            "count" : 14,
+            "scalar" : false,
+            "tag" : 338,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 339,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        ],
+        "height" : 224,
+        "photometricInterpretation" : 1,
+        "planarConfiguration" : 1,
+        "samplesPerPixel" : 15,
+        "tileHeight" : 128,
+        "tileWidth" : 128,
+        "width" : 270
+      },
+      "index" : 1,
+      "rasters" : {
+        "sha256PerSample" : [
+          "8c2344a34809bf9177add8596df4dab7d36bb1d643d61f0275ede901e483964c",
+          "e08bab9218a84acef678df00f11fed41c066f173b54858bca1b8a7d77e27dacc",
+          "c8a006defd4224b5171dccbecfc9590a3d0d9a35ce2a10a58b807c321f446b9d",
+          "5868461e89222356f028e2fbaa44aa543a947eb8aa67d7f78bb03e11706598c7",
+          "a020397d681959723396cd6c3c270718f9e108192d09b06a499e8c9b97f216ef",
+          "e8a4981f67f554063d51a24d39e5a8ffb33a59a917fc1f270bae72d170e001ca",
+          "bc85fc3f6baae9f1fc99e49929a8737caaebe70f69b3ca65fc25d46c9efed067",
+          "be5489ecb92a9ead1fcd885ef116910a14bc2389ba4564c094c0790ed3b83735",
+          "70560b842c4bf69bf4f0add4c3ede7127b46a2b0eaf3131d6d2b71f9986a574c",
+          "43ad8132faab49ac84f3bac32ab0fe52af2d586e79b295941d6b5b1618da42ff",
+          "f7d238b8bab7c2aa15562a47bfd3ff18c9bcc82524a88d872401f4250c1ed39e",
+          "b6715ca88268de89d122f0f9940ffeca41288c37f47786fc499f5a3bd981c8a9",
+          "5771bd47699ae1ff061342ed6901feb6546ebdf91f9d59731924abd29b4f5ab5",
+          "cca4057c9c3684e7046daeb0c3dcf36f52253fd1f1bdbcff2731d4e4a07f668a",
+          "441777e736e43849b34134469ad0d215c09d89dc45ea9ebe4271e6158fbd7317"
+        ],
+        "spotChecks" : [
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 269,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 223
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 269,
+            "y" : 223
+          },
+          {
+            "sample" : 0,
+            "value" : 4757,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 1,
+            "value" : 4102,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 2,
+            "value" : 3229,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 3,
+            "value" : 2626,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 4,
+            "value" : 1913,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 5,
+            "value" : 1.74e+03,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 6,
+            "value" : 1783,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 7,
+            "value" : 1.76e+03,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 8,
+            "value" : 1763,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 9,
+            "value" : 1743,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 10,
+            "value" : 1.04e+03,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 11,
+            "value" : 2267,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 12,
+            "value" : 1912,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 13,
+            "value" : 1712,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 14,
+            "value" : 1427,
+            "x" : 135,
+            "y" : 112
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 128
+          },
+          {
+            "sample" : 0,
+            "value" : 5312,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 1,
+            "value" : 4517,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 2,
+            "value" : 3.42e+03,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 3,
+            "value" : 2746,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 4,
+            "value" : 1999,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 5,
+            "value" : 1807,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 6,
+            "value" : 1815,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 7,
+            "value" : 1.8e+03,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 8,
+            "value" : 1.76e+03,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 9,
+            "value" : 1743,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 10,
+            "value" : 1093,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 11,
+            "value" : 2295,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 12,
+            "value" : 1908,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 13,
+            "value" : 1694,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 14,
+            "value" : 1336,
+            "x" : 128,
+            "y" : 128
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 256,
+            "y" : 128
+          }
+        ]
+      }
+    },
+    {
+      "directory" : {
+        "bitsPerSample" : [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "compression" : 1,
+        "entries" : [
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 254,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 256,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                135
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 257,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                112
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 258,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 259,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 262,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 277,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                15
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 284,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 322,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 323,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 2,
+            "scalar" : false,
+            "tag" : 324,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                10198582,
+                10690102
+              ]
+            }
+          },
+          {
+            "count" : 2,
+            "scalar" : false,
+            "tag" : 325,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                491520,
+                491520
+              ]
+            }
+          },
+          {
+            "count" : 14,
+            "scalar" : false,
+            "tag" : 338,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 339,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        ],
+        "height" : 112,
+        "photometricInterpretation" : 1,
+        "planarConfiguration" : 1,
+        "samplesPerPixel" : 15,
+        "tileHeight" : 128,
+        "tileWidth" : 128,
+        "width" : 135
+      },
+      "index" : 2,
+      "rasters" : {
+        "sha256PerSample" : [
+          "355c12773c0e7f000eee5f36d77450c31291db0e95a6c393c931645fc13566a3",
+          "e731d6bf491ca3d793218556daef4b5f92c8c52a5f4bad120332056be472dff7",
+          "2500a6c9e4134f44101f064e4b6f27156fef9fca3043e446de517cd87ea515f8",
+          "1524ea310a5a0c81d218ac768c1be0759ade114e6b0918d33806212401799ffb",
+          "06b4158cb852698c9064dcab43ee902dbccb4f0a25d9e333b883c402e0f515ca",
+          "d1b58e12498a558c02f39ceb83dc35003990b59df31c4e59257eb3d56601392c",
+          "ddc47c6e4940aa01d7f731caa892b8bf347f96475dc963dbb707e2399f344504",
+          "230eeb0d561728b3ff0b6fb2aefaf9d960c95dd2e9999fc47337d7a886a7cafd",
+          "f34cc890f62fce625ec9a74f26a7f38f59f136e9fa2ff503e85a773538cc571b",
+          "0def9f87c05f7bd72e32025e805857b6ee9efb2d19a93ab8637fd9c876d1f39a",
+          "e5bd775f85d8d34ea58859b3641724f1f7f528915e89b16ad3b6cc0c320a3fcc",
+          "91207369e2ff4082c054c84577954ca6af360e4d50252a94bd12f9f3f863735c",
+          "b389309582453f710612591cbc3625c1dd99cb43721adb90589b3d2eea5a108b",
+          "29eabc37d425b0beb1e27dd3cacb75807811183169caed0ad9fe956e9230c64b",
+          "7aeb6fa135d80379eda02ff866f72a6857eee30263e719c7ea8c096537dbd34d"
+        ],
+        "spotChecks" : [
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 134,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 111
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 134,
+            "y" : 111
+          },
+          {
+            "sample" : 0,
+            "value" : 4828,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 1,
+            "value" : 4111,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 2,
+            "value" : 3243,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 3,
+            "value" : 2683,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 4,
+            "value" : 1964,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 5,
+            "value" : 1758,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 6,
+            "value" : 1833,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 7,
+            "value" : 1.82e+03,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 8,
+            "value" : 1824,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 9,
+            "value" : 1803,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 10,
+            "value" : 1089,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 11,
+            "value" : 2322,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 12,
+            "value" : 1991,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 13,
+            "value" : 1.78e+03,
+            "x" : 67,
+            "y" : 56
+          },
+          {
+            "sample" : 14,
+            "value" : 1415,
+            "x" : 67,
+            "y" : 56
+          }
+        ]
+      }
+    },
+    {
+      "directory" : {
+        "bitsPerSample" : [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "compression" : 1,
+        "entries" : [
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 254,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 256,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                68
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 257,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                56
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 258,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 259,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 262,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 277,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                15
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 284,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 322,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 323,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : false,
+            "tag" : 324,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                11181622
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : false,
+            "tag" : 325,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                491520
+              ]
+            }
+          },
+          {
+            "count" : 14,
+            "scalar" : false,
+            "tag" : 338,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 339,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        ],
+        "height" : 56,
+        "photometricInterpretation" : 1,
+        "planarConfiguration" : 1,
+        "samplesPerPixel" : 15,
+        "tileHeight" : 128,
+        "tileWidth" : 128,
+        "width" : 68
+      },
+      "index" : 3,
+      "rasters" : {
+        "sha256PerSample" : [
+          "d21569b5913eb9c81b3defc04dd3264e9ad7d32dc53be4ea8b3e4eb8e2165b45",
+          "f00a5351039c1a32922cf5f28e4b3730c42dad4462695330ea6dda81df85cf67",
+          "c2722b5dc64f3f8669feb89ea3ffe4aa4b31995e7bfe59d96d75eca87574d71e",
+          "4e1329ef9229e92341ff0cb6b45a80dfe1687d0d3cd0d5eef20eecee16f2c51a",
+          "b808669459e8d4976f6657c4fcf510ee0cd8361d32286e2f81cc852dd0d5e096",
+          "2cbc6fe0d2bc64863850c2122c3116a1691332fa9304043aee991ff030f626a6",
+          "c8358614d7a2003ff6ca29f40dffd1881bb3ea9c804175177b89a649bdf81d45",
+          "916ad5d8de2ec6345c87fe8579cc722fce4d9943c664e77e0496ccc673e37392",
+          "df9cbcf35adc54113ec714e3b57aaaeb67471d1dd7610431b356973cd75cd863",
+          "db9fed03f51bcadae9390e7fd144b2b37c1d7912c100269c372245df2f84729a",
+          "d847256d61dd3b9cf2127c191afff778b9a9c65c3d8287166963b57f0fc93e79",
+          "09f4e6183429abc3fba90335cee31a697e2c75098ac252c150fd19615e68eb6c",
+          "abe28ce053f356b7cde746560f90d9ff49e367ffe0a12aad7fb5dfa3ccf61a51",
+          "99880911787b9e1562ca6108fe7c9380433f5a05a5ff063005f3f0919d7a276c",
+          "72f11890b4dd0ceab47d78725c51b8c3b0a90efe8944621a2f627935916b63dc"
+        ],
+        "spotChecks" : [
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 67,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 55
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 67,
+            "y" : 55
+          },
+          {
+            "sample" : 0,
+            "value" : 4788,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 1,
+            "value" : 4137,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 2,
+            "value" : 3228,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 3,
+            "value" : 2714,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 4,
+            "value" : 1976,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 5,
+            "value" : 1791,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 6,
+            "value" : 1842,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 7,
+            "value" : 1847,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 8,
+            "value" : 1831,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 9,
+            "value" : 1834,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 10,
+            "value" : 1107,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 11,
+            "value" : 2381,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 12,
+            "value" : 2012,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 13,
+            "value" : 1.78e+03,
+            "x" : 34,
+            "y" : 28
+          },
+          {
+            "sample" : 14,
+            "value" : 1467,
+            "x" : 34,
+            "y" : 28
+          }
+        ]
+      }
+    },
+    {
+      "directory" : {
+        "bitsPerSample" : [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "compression" : 1,
+        "entries" : [
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 254,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 256,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                34
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 257,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                28
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 258,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16,
+                16
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 259,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 262,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 277,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                15
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 284,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 322,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : true,
+            "tag" : 323,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                128
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : false,
+            "tag" : 324,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                11673142
+              ]
+            }
+          },
+          {
+            "count" : 1,
+            "scalar" : false,
+            "tag" : 325,
+            "type" : 4,
+            "values" : {
+              "ints" : [
+                491520
+              ]
+            }
+          },
+          {
+            "count" : 14,
+            "scalar" : false,
+            "tag" : 338,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          {
+            "count" : 15,
+            "scalar" : false,
+            "tag" : 339,
+            "type" : 3,
+            "values" : {
+              "ints" : [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        ],
+        "height" : 28,
+        "photometricInterpretation" : 1,
+        "planarConfiguration" : 1,
+        "samplesPerPixel" : 15,
+        "tileHeight" : 128,
+        "tileWidth" : 128,
+        "width" : 34
+      },
+      "index" : 4,
+      "rasters" : {
+        "sha256PerSample" : [
+          "0b39060ba61948035a86dde3679cfa5c402d18a8971233d73b29153ec75d8e7d",
+          "5856c82de37f8cea85c21d1f5ffa3afee49f7da0ede969c16ab7859d1eb892fe",
+          "c36f307cb2d22b2ec0b16be6022381b9c85692e09422bd07c2d729b9fb104452",
+          "eedb07d4a7f96a03fff08cbfbfe910bdbb2da31302e2b9b0964b6443931d4799",
+          "d2c3e51f53247e0ea132dc73a6ce4905419b0d145f3f360b0afa31ef19696a6d",
+          "03dbe9bab7ded3abe2ece4593e4627405ca7a6a5a475e675102e40fb5509dee3",
+          "21bac6de59e17bdfb146df5503e72bfc16d9013d24ed68301da062a10fd3449e",
+          "c4e636d3cce58e478f78373c70f85fa46f9b9bfdc9bf5f2ed87dfcff6ea6c5e6",
+          "66ca6d9b2ebe291bc5d140f9afcdcf6a3faba62b617aafa8d74891befd26f9a5",
+          "3a25114cbb0100efc1c7f6bcd97febed8b965797ce379e1a81c21fceddf7200b",
+          "3c1c39aeecf6b326ddd4e91c6e884d735e43cafeb22cc334843f994f2329d3a7",
+          "3781031f8ff1c80d816f03b32da4ba5b58ca4621d43a2a3a4caf1c854f0570df",
+          "ec06a9ff082a6bbfe3ee4643c9a7902928c05303775c6c5fdb850b93406deaf2",
+          "cf8868fbaea24e2bbdd531008752092e2fd5f0b88dd1b649e406a887b813d10f",
+          "b1c88ba0426949358d16e80d787576edfe08f70b4549e187d72f7d44898cea6c"
+        ],
+        "spotChecks" : [
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 33,
+            "y" : 0
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 0,
+            "y" : 27
+          },
+          {
+            "sample" : 0,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 1,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 2,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 3,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 4,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 5,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 6,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 7,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 8,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 9,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 10,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 11,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 12,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 13,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 14,
+            "value" : 0,
+            "x" : 33,
+            "y" : 27
+          },
+          {
+            "sample" : 0,
+            "value" : 4788,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 1,
+            "value" : 4137,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 2,
+            "value" : 3228,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 3,
+            "value" : 2714,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 4,
+            "value" : 1976,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 5,
+            "value" : 1791,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 6,
+            "value" : 1842,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 7,
+            "value" : 1847,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 8,
+            "value" : 1831,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 9,
+            "value" : 1834,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 10,
+            "value" : 1107,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 11,
+            "value" : 2381,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 12,
+            "value" : 2012,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 13,
+            "value" : 1.78e+03,
+            "x" : 17,
+            "y" : 14
+          },
+          {
+            "sample" : 14,
+            "value" : 1467,
+            "x" : 17,
+            "y" : 14
+          }
+        ]
+      }
     }
   ],
-  "source" : "stripped.tiff"
+  "source" : "overviews.tiff"
 }

@@ -174,7 +174,8 @@ public enum TIFFReader {
         return .array(values)
     }
 
-    /// Combine individual ASCII character values into string(s).
+    /// Combine individual ASCII character values into NUL-separated strings.
+    /// Always an array, even for a single string, matching tiff-ios.
     private static func combineAsciiValues(_ values: [EntryValue]) -> EntryValue {
         var strings = [EntryValue]()
         var current = ""
@@ -194,9 +195,6 @@ public enum TIFFReader {
             strings.append(.ascii(current))
         }
 
-        if strings.count == 1 {
-            return strings[0]
-        }
         return .array(strings)
     }
 }
