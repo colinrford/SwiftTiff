@@ -41,6 +41,11 @@ public enum PhotometricInterpretation: UInt16, Sendable {
     case rgb           = 2
     case palette       = 3
     case transparency  = 4
+    case separated     = 5
+    case yCbCr         = 6
+    case cieLab        = 8
+    case iccLab        = 9
+    case ituLab        = 10
 }
 
 /// Planar configuration.

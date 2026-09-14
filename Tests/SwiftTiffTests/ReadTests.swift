@@ -130,6 +130,46 @@ struct ReadTests {
         }
     }
 
+    @Test func jpegPhotometricIsYCbCr() throws {
+        let image = try TIFFReader.read(from: Data(contentsOf: TestFile.jpeg.url))
+        #expect(image.fileDirectory.photometricInterpretation == .yCbCr)
+    }
+
+    // MARK: - ASCII entries
+
+    @Test func singleAsciiStringIsArray() throws {
+        let entry = try readAsciiEntry(Array("GDAL\0".utf8))
+        #expect(entry.values == .array([.ascii("GDAL")]))
+    }
+
+    @Test func nulSeparatedAsciiStringsSplit() throws {
+        let entry = try readAsciiEntry(Array("WGS 84|\0NAD83\0".utf8))
+        #expect(entry.values == .array([.ascii("WGS 84|"), .ascii("NAD83")]))
+    }
+
+    /// tiff-ios drops a final string that lacks a NUL terminator; SwiftTiff keeps it.
+    @Test func unterminatedAsciiStringKept() throws {
+        let entry = try readAsciiEntry(Array("abcde".utf8))
+        #expect(entry.values == .array([.ascii("abcde")]))
+    }
+
+    /// One-entry TIFF whose ImageDescription holds `bytes` (over 4, so out of line).
+    private func readAsciiEntry(_ bytes: [UInt8]) throws -> FileDirectoryEntry {
+        var w = ByteWriter(byteOrder: .littleEndian)
+        w.writeString("II")
+        w.writeUInt16(42)
+        w.writeUInt32(8)
+        w.writeUInt16(1)
+        w.writeUInt16(FieldTagType.imageDescription.rawValue)
+        w.writeUInt16(FieldType.ascii.rawValue)
+        w.writeUInt32(UInt32(bytes.count))
+        w.writeUInt32(26)
+        w.writeUInt32(0)
+        bytes.forEach { w.writeUInt8($0) }
+        let image = try TIFFReader.read(from: w.data)
+        return try #require(image.fileDirectory.sortedEntries.first)
+    }
+
     // MARK: - Interleaved raster reading
 
     @Test func readInterleavedRasters() throws {

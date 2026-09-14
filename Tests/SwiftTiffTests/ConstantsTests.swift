@@ -53,6 +53,11 @@ struct ConstantsTests {
         #expect(PhotometricInterpretation.rgb.rawValue == 2)
         #expect(PhotometricInterpretation.palette.rawValue == 3)
         #expect(PhotometricInterpretation.transparency.rawValue == 4)
+        #expect(PhotometricInterpretation.separated.rawValue == 5)
+        #expect(PhotometricInterpretation.yCbCr.rawValue == 6)
+        #expect(PhotometricInterpretation.cieLab.rawValue == 8)
+        #expect(PhotometricInterpretation.iccLab.rawValue == 9)
+        #expect(PhotometricInterpretation.ituLab.rawValue == 10)
     }
 
     // MARK: - PlanarConfiguration raw values
