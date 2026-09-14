@@ -23,7 +23,7 @@ let package = Package(
             dependencies: ["SwiftTiff"],
             path: "Tests/SwiftTiffTests",
             resources: [
-                .copy("Resources"),
+                .copy("Fixtures"),
                 .copy("Goldens")
             ]
         )

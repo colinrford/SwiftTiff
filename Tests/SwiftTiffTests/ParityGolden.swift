@@ -10,7 +10,7 @@ import Foundation
 /// marked with `"generator": "SwiftTiff (bootstrap)"`. Phase 2 regenerates
 /// them from ObjC and any divergence becomes a real finding.
 struct Golden: Codable, Equatable {
-    /// Filename of the source TIFF in `Tests/SwiftTiffTests/Resources/`.
+    /// Filename of the source TIFF in `Tests/SwiftTiffTests/Fixtures/`.
     let source: String
     /// Identifier of the implementation that produced this golden.
     let generator: String

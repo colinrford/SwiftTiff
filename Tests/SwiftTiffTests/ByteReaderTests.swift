@@ -179,7 +179,7 @@ struct ByteReaderTests {
 
     @Test func fromFile() throws {
         let bundle = Bundle.module
-        let path = bundle.path(forResource: "small", ofType: "tiff", inDirectory: "Resources")!
+        let path = bundle.path(forResource: "small", ofType: "tiff", inDirectory: "Fixtures")!
         let reader = try ByteReader.from(file: path)
         #expect(reader.byteLength > 0)
         #expect(reader.position == 0)
@@ -187,7 +187,7 @@ struct ByteReaderTests {
 
     @Test func fromStream() throws {
         let bundle = Bundle.module
-        let path = bundle.path(forResource: "small", ofType: "tiff", inDirectory: "Resources")!
+        let path = bundle.path(forResource: "small", ofType: "tiff", inDirectory: "Fixtures")!
         let stream = InputStream(fileAtPath: path)!
         let reader = try ByteReader.from(stream: stream)
         #expect(reader.byteLength > 0)
@@ -196,7 +196,7 @@ struct ByteReaderTests {
 
     @Test func fromFileAndStreamProduceSameData() throws {
         let bundle = Bundle.module
-        let path = bundle.path(forResource: "small", ofType: "tiff", inDirectory: "Resources")!
+        let path = bundle.path(forResource: "small", ofType: "tiff", inDirectory: "Fixtures")!
         let fromFile = try ByteReader.from(file: path)
         let stream = InputStream(fileAtPath: path)!
         let fromStream = try ByteReader.from(stream: stream)

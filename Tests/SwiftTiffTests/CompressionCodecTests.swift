@@ -118,7 +118,7 @@ struct CompressionCodecTests {
 
     @Test func packbitsDecodeRealTiffStrip() throws {
         // Decode strip 0 from packbits.tiff (539px * 15spp * 16bps = 16170 bytes)
-        let url = Bundle.module.url(forResource: "packbits", withExtension: "tiff", subdirectory: "Resources")!
+        let url = Bundle.module.url(forResource: "packbits", withExtension: "tiff", subdirectory: "Fixtures")!
         let fileData = try Data(contentsOf: url)
 
         // Strip 0: offset=4190, length=254
@@ -216,7 +216,7 @@ struct CompressionCodecTests {
 
     @Test func lzwDecodeRealTiffStrip() throws {
         // Decode strip 1 from lzw.tiff (309 bytes compressed, reaches 10-bit codes)
-        let url = Bundle.module.url(forResource: "lzw", withExtension: "tiff", subdirectory: "Resources")!
+        let url = Bundle.module.url(forResource: "lzw", withExtension: "tiff", subdirectory: "Fixtures")!
         let fileData = try Data(contentsOf: url)
 
         // Strip 1: offset=4407, length=309 (little-endian TIFF, 539px * 15spp * 2bps = 16170 decoded)

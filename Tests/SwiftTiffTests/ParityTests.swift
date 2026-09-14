@@ -261,7 +261,7 @@ private func locateFixture(_ fixture: String) throws -> URL {
     guard let url = Bundle.module.url(
         forResource: fixture,
         withExtension: "tiff",
-        subdirectory: "Resources"
+        subdirectory: "Fixtures"
     ) ?? Bundle.module.url(forResource: fixture, withExtension: "tiff") else {
         throw ParityError.missingResource("\(fixture).tiff")
     }

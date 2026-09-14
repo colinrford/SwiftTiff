@@ -258,11 +258,11 @@ private func bootstrapGoldenValues(from value: EntryValue, fieldType: FieldType)
 
 // MARK: - Path resolution (source-tree, not test bundle)
 
-/// Resolve `Tests/SwiftTiffTests/Resources/<fixture>.tiff` in the source tree.
+/// Resolve `Tests/SwiftTiffTests/Fixtures/<fixture>.tiff` in the source tree.
 private func locateSourceFixture(_ fixture: String) throws -> URL {
     let root = packageRoot()
     return root
-        .appendingPathComponent("Tests/SwiftTiffTests/Resources")
+        .appendingPathComponent("Tests/SwiftTiffTests/Fixtures")
         .appendingPathComponent("\(fixture).tiff")
 }
 

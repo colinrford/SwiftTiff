@@ -26,7 +26,7 @@ enum TestFile: String {
         Bundle.module.url(
             forResource: rawValue,
             withExtension: rawValue == "quad-jpeg" ? "tif" : "tiff",
-            subdirectory: "Resources"
+            subdirectory: "Fixtures"
         )!
     }
 }
