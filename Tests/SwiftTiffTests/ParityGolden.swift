@@ -6,9 +6,7 @@ import Foundation
 /// implementation (ObjC `tiff-ios`) produces when decoding the fixture, so
 /// the Swift rewrite can be checked against it.
 ///
-/// Phase 1 goldens are bootstrapped from the Swift implementation itself and
-/// marked with `"generator": "SwiftTiff (bootstrap)"`. Phase 2 regenerates
-/// them from ObjC and any divergence becomes a real finding.
+/// Goldens are generated from ObjC by `tools/GenerateGoldens/generate.sh`.
 struct Golden: Codable, Equatable {
     /// Filename of the source TIFF in `Tests/SwiftTiffTests/Fixtures/`.
     let source: String
@@ -25,7 +23,8 @@ struct GoldenImage: Codable, Equatable {
     /// Parsed IFD metadata (dimensions, tags, strip/tile layout).
     let directory: GoldenDirectory
     /// Raster verification data (hashes + spot checks). Derives from `directory`.
-    let rasters: GoldenRasters
+    /// Absent when the reference implementation cannot decode the rasters.
+    let rasters: GoldenRasters?
 }
 
 /// Parsed IFD metadata used for directory-level comparisons.
@@ -57,12 +56,17 @@ struct GoldenDirectory: Codable, Equatable {
     let entries: [GoldenEntry]
 }
 
-/// A single IFD entry: tag + type + values.
+/// A single IFD entry: tag + type + count + values.
 struct GoldenEntry: Codable, Equatable {
     /// Raw TIFF tag number (e.g. 256 for ImageWidth).
     let tag: Int
     /// Raw TIFF field type code (1=BYTE, 2=ASCII, 3=SHORT, 4=LONG, ...).
     let type: Int
+    /// Type count as declared in the IFD entry.
+    let count: Int
+    /// True when the reader unwrapped the value to a single scalar rather
+    /// than keeping it as an array.
+    let scalar: Bool
     /// The entry's value(s). Representation depends on type.
     let values: GoldenValues
 }

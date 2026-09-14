@@ -3,37 +3,42 @@ import Testing
 import CryptoKit
 @testable import SwiftTiff
 
-/// Parity tests: verify Swift decode output against pre-recorded golden JSON.
-///
-/// Phase 1 validates the driver machinery using a single fixture
-/// (`stripped.tiff`) with a golden bootstrapped from Swift itself.
-/// Phase 2 will parametrize across all fixtures once the ObjC generator
-/// exists.
+/// Parity tests: verify Swift decode output against golden JSON generated
+/// from the ObjC reference implementation (`tools/GenerateGoldens`).
 @Suite struct ParityTests {
 
-    @Test func strippedMatchesGolden() throws {
-        try runParity(fixture: "stripped")
+    static let fixtures = [
+        "deflate.tiff", "float32.tiff", "float64.tiff", "initial.tiff", "int32.tiff",
+        "interleave.tiff", "lzw.tiff", "lzw_predictor.tiff", "lzw_predictor_floating.tiff",
+        "overviews.tiff", "packbits.tiff", "quad-jpeg.tif", "rgb.tiff", "small.tiff",
+        "stripped.tiff", "tiled.tiff", "tiledplanar.tiff", "tiledplanarlzw.tiff", "uint32.tiff"
+    ]
+
+    @Test(arguments: fixtures)
+    func directoriesMatchGolden(fixture: String) throws {
+        let golden = try loadGolden(fixture: fixture)
+        let tiff = try TIFFReader.read(fromFile: try locateFixture(fixture).path)
+
+        #expect(
+            tiff.fileDirectories.count == golden.images.count,
+            "\(fixture): IFD count mismatch (expected \(golden.images.count), got \(tiff.fileDirectories.count))"
+        )
+        for expected in golden.images where expected.index < tiff.fileDirectories.count {
+            compareDirectory(tiff.fileDirectories[expected.index], expected.directory, fixture: fixture, index: expected.index)
+        }
     }
-}
 
-// MARK: - Driver
+    @Test(arguments: fixtures)
+    func rastersMatchGolden(fixture: String) throws {
+        let golden = try loadGolden(fixture: fixture)
+        let tiff = try TIFFReader.read(fromFile: try locateFixture(fixture).path)
 
-private func runParity(fixture: String) throws {
-    let golden = try loadGolden(fixture: fixture)
-    let tiffURL = try locateFixture(fixture)
-    let tiff = try TIFFReader.read(fromFile: tiffURL.path)
-
-    #expect(
-        tiff.fileDirectories.count == golden.images.count,
-        "\(fixture): IFD count mismatch (expected \(golden.images.count), got \(tiff.fileDirectories.count))"
-    )
-
-    for expected in golden.images {
-        let actual = tiff.fileDirectories[expected.index]
-        compareDirectory(actual, expected.directory, fixture: fixture, index: expected.index)
-
-        let rasters = try actual.readRasters()
-        compareRasters(rasters, actual: actual, expected: expected.rasters, fixture: fixture, index: expected.index)
+        for expected in golden.images where expected.index < tiff.fileDirectories.count {
+            guard let expectedRasters = expected.rasters else { continue }
+            let actual = tiff.fileDirectories[expected.index]
+            let rasters = try actual.readRasters()
+            compareRasters(rasters, actual: actual, expected: expectedRasters, fixture: fixture, index: expected.index)
+        }
     }
 }
 
@@ -76,7 +81,26 @@ private func compareDirectory(
             continue
         }
         #expect(got.type == entry.type, "\(tag) tag \(entry.tag) type")
-        #expect(got.values == entry.values, "\(tag) tag \(entry.tag) values")
+        #expect(got.count == entry.count, "\(tag) tag \(entry.tag) count")
+        #expect(got.scalar == entry.scalar, "\(tag) tag \(entry.tag) scalar (expected \(entry.scalar), got \(got.scalar))")
+        #expect(
+            valuesMatch(got.values, entry.values),
+            "\(tag) tag \(entry.tag) values (expected \(entry.values), got \(got.values))"
+        )
+    }
+}
+
+/// Exact equality, except FLOAT/DOUBLE tag values may differ by a few ulps.
+///
+/// tiff-ios reads floating-point tag values through `NSDecimalNumber`, which
+/// does not round-trip every double (e.g. ModelPixelScale 0.03139662310517357
+/// comes back as 0.03139662310517356). SwiftTiff returns the exact file value.
+private func valuesMatch(_ actual: GoldenValues, _ expected: GoldenValues) -> Bool {
+    guard case .doubles(let a) = actual, case .doubles(let e) = expected else {
+        return actual == expected
+    }
+    return a.count == e.count && zip(a, e).allSatisfy { x, y in
+        x == y || abs(x - y) <= 4 * max(x.magnitude, y.magnitude).ulp
     }
 }
 
@@ -206,8 +230,15 @@ private func goldenEntry(from entry: FileDirectoryEntry) -> GoldenEntry {
     GoldenEntry(
         tag: Int(entry.fieldTag.rawValue),
         type: Int(entry.fieldType.rawValue),
+        count: entry.typeCount,
+        scalar: !isArray(entry.values),
         values: goldenValues(from: entry.values, fieldType: entry.fieldType)
     )
+}
+
+private func isArray(_ value: EntryValue) -> Bool {
+    if case .array = value { return true }
+    return false
 }
 
 /// Flatten an `EntryValue` into a `GoldenValues`.
@@ -252,30 +283,21 @@ private func goldenValues(from value: EntryValue, fieldType: FieldType) -> Golde
 // MARK: - Resource loading
 
 private func loadGolden(fixture: String) throws -> Golden {
-    let url = try locateGolden(fixture: fixture)
+    let url = try locateResource("\(fixture).json", subdirectory: "Goldens")
     let data = try Data(contentsOf: url)
     return try JSONDecoder().decode(Golden.self, from: data)
 }
 
 private func locateFixture(_ fixture: String) throws -> URL {
-    guard let url = Bundle.module.url(
-        forResource: fixture,
-        withExtension: "tiff",
-        subdirectory: "Fixtures"
-    ) ?? Bundle.module.url(forResource: fixture, withExtension: "tiff") else {
-        throw ParityError.missingResource("\(fixture).tiff")
-    }
-    return url
+    try locateResource(fixture, subdirectory: "Fixtures")
 }
 
-private func locateGolden(fixture: String) throws -> URL {
-    let name = "\(fixture).tiff"
-    guard let url = Bundle.module.url(
-        forResource: name,
-        withExtension: "json",
-        subdirectory: "Goldens"
-    ) ?? Bundle.module.url(forResource: name, withExtension: "json") else {
-        throw ParityError.missingResource("Goldens/\(name).json")
+private func locateResource(_ name: String, subdirectory: String) throws -> URL {
+    let base = (name as NSString).deletingPathExtension
+    let ext = (name as NSString).pathExtension
+    guard let url = Bundle.module.url(forResource: base, withExtension: ext, subdirectory: subdirectory)
+        ?? Bundle.module.url(forResource: base, withExtension: ext) else {
+        throw ParityError.missingResource("\(subdirectory)/\(name)")
     }
     return url
 }
