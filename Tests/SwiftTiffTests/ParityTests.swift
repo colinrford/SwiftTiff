@@ -99,8 +99,10 @@ private func valuesMatch(_ actual: GoldenValues, _ expected: GoldenValues) -> Bo
     guard case .doubles(let a) = actual, case .doubles(let e) = expected else {
         return actual == expected
     }
-    return a.count == e.count && zip(a, e).allSatisfy { x, y in
-        x == y || abs(x - y) <= 4 * max(x.magnitude, y.magnitude).ulp
+    guard a.count == e.count else { return false }
+    return zip(a, e).allSatisfy { (x: Double, y: Double) -> Bool in
+        let tolerance: Double = 4 * max(x.magnitude, y.magnitude).ulp
+        return (x - y).magnitude <= tolerance
     }
 }
 
