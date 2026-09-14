@@ -1,0 +1,47 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  macos:
+    name: macOS build and test
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Build
+        run: swift build
+      - name: Test
+        run: swift test
+
+  ios:
+    name: iOS build and test
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Build for iOS device
+        run: xcodebuild build -scheme SwiftTiff -destination 'generic/platform=iOS' -quiet
+      - name: Select iOS Simulator
+        id: simulator
+        # Device names vary by runner image, so pick an iPhone on the newest installed iOS runtime
+        run: |
+          udid=$(xcrun simctl list devices available -j | jq -r '
+            .devices | to_entries
+            | map(select(.key | test("SimRuntime\\.iOS-")))
+            | sort_by(.key | capture("iOS-(?<major>[0-9]+)-(?<minor>[0-9]+)") | [(.major | tonumber), (.minor | tonumber)])
+            | map(.value[] | select(.name | startswith("iPhone")))
+            | last | .udid // empty
+          ')
+          if [ -z "$udid" ]; then
+            echo "No available iPhone simulator found" >&2
+            xcrun simctl list devices available >&2
+            exit 1
+          fi
+          xcrun simctl list devices available | grep "$udid"
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"
+      - name: Test on iOS Simulator
+        run: xcodebuild test -scheme SwiftTiff -destination "platform=iOS Simulator,id=${{ steps.simulator.outputs.udid }}" -quiet
